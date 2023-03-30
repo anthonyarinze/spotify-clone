@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Divider,
-  Drawer,
-  Grid,
-  Typography,
-  Button,
-  IconButton,
-} from "@mui/material";
+import { Box, Divider, Drawer, Grid, Typography, Button } from "@mui/material";
 import {
   SearchOutlined,
   HomeOutlined,
@@ -89,8 +81,8 @@ const LeftDrawer = () => {
               gap: "1.5rem",
             }}
           >
-            {navItems.slice(0, 3).map(({ text, icon }) => (
-              <Grid container key={text} alignItems="center" spacing={2}>
+            {navItems.slice(0, 3).map(({ text, icon }, index) => (
+              <Grid container key={index} alignItems="center" spacing={2}>
                 <Grid item>
                   {React.cloneElement(icon, { sx: { fontSize: "2.5rem" } })}
                 </Grid>
@@ -112,8 +104,8 @@ const LeftDrawer = () => {
               gap: "1.5rem",
             }}
           >
-            {navItems.slice(-2).map(({ text, icon }) => (
-              <Grid container key={text} alignItems="center" spacing={2}>
+            {navItems.slice(-2).map(({ text, icon }, index) => (
+              <Grid container key={index} alignItems="center" spacing={2}>
                 <Grid item>
                   {React.cloneElement(icon, { sx: { fontSize: "2.5rem" } })}
                 </Grid>

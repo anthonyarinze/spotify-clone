@@ -1,4 +1,5 @@
 import React from "react";
+import Body from "./components/Body";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 
@@ -7,6 +8,7 @@ function App() {
     <div>
       <Navbar />
       <Sidebar />
+      <Body />
     </div>
   );
 }
