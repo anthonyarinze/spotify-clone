@@ -8,6 +8,7 @@ import {
   FavoriteOutlined,
   LanguageOutlined,
 } from "@mui/icons-material";
+// @ts-ignore
 import LogoImage from "../assets/logo.png";
 
 const drawerWidth = 320;
